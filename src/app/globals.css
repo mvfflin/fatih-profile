@@ -1,8 +1,13 @@
 @import "tailwindcss";
+@import "./fonts.css";
+
+* {
+  @apply transition-all;
+}
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0a0a0a;
+  --foreground: #ededed;
 }
 
 @theme inline {
@@ -10,17 +15,34 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-poppins: "Poppins", sans-serif;
+  --font-helvetica: "Helvetica", sans-serif;
+  --font-motion: "Motion", sans-serif;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+#navbar ul li {
+  @apply cursor-pointer hover:scale-110;
+}
+
+#navbar ul li #active {
+  @apply block !max-w-full transition-all duration-500 h-0.5 bg-white;
+}
+
+#navbar ul li span {
+  @apply block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white;
+}
+
+.bg-sawah {
+  background: url("../assets/images/sawah.jpg"),
+    linear-gradient(to bottom, gray, gray);
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
