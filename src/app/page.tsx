@@ -6,7 +6,6 @@ import HistorySection from "@/components/History";
 import HomeSection from "@/components/Home";
 import Navbar from "@/components/Navbar";
 import ProjectSection from "@/components/Projects";
-import Image from "next/image";
 
 export default function Home() {
   return (
