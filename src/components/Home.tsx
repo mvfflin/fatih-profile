@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import Button1 from "./button";
 import myphoto from "../assets/images/me.jpg";
+import Link from "next/link";
 
 export default function HomeSection() {
   return (
@@ -24,9 +25,11 @@ export default function HomeSection() {
             <h2 className="font-semibold text-2xl mt-3 font-poppins">
               Fullstack Developer
             </h2>
-            <div className="mt-3 text-3xl font-motion flex justify-center lg:justify-start">
-              <Button1>About me!</Button1>
-            </div>
+            <Link href={"#about"}>
+              <div className="mt-3 text-3xl font-motion flex justify-center lg:justify-start">
+                <Button1>About me!</Button1>
+              </div>
+            </Link>
           </div>
         </div>
       </div>

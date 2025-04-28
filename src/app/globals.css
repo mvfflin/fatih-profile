@@ -3,6 +3,7 @@
 
 * {
   @apply transition-all;
+  scroll-behavior: smooth;
 }
 
 :root {
