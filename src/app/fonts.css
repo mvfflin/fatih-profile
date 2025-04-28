@@ -14,3 +14,9 @@
   font-family: "Motion";
   src: url("../assets/fonts/motion-control/MotionControl-Bold.otf");
 }
+
+@font-face {
+  font-family: "Socmed";
+  src: url("../assets/fonts/social_media_circled/Social\ Media\ Circled.ttf")
+    format("truetype");
+}

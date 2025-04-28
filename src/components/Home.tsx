@@ -5,8 +5,8 @@ import myphoto from "../assets/images/me.jpg";
 
 export default function HomeSection() {
   return (
-    <section id="home" className="h-screen flex bg-sawah">
-      <div className="m-auto">
+    <section id="home" className="min-h-screen flex bg-sawah">
+      <div className="m-auto px-5">
         <div className="block text-center lg:text-left lg:flex gap-20">
           <div className="text-center justify-center flex">
             <Image
@@ -22,7 +22,7 @@ export default function HomeSection() {
               Fatihul Ihsan Ramadhan
             </h1>
             <h2 className="font-semibold text-2xl mt-3 font-poppins">
-              Junior Fullstack Developer | Small Content Creator
+              Fullstack Developer
             </h2>
             <div className="mt-3 text-3xl font-motion flex justify-center lg:justify-start">
               <Button1>About me!</Button1>
